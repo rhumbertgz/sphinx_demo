@@ -10,12 +10,16 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../src'))
 
 
 # -- Project information -----------------------------------------------------
+
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('../src'))
 
 project = 'sphinx_demo'
 copyright = '2019, Humberto'
@@ -31,29 +35,14 @@ release = '1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinxcontrib.napoleon'
+    'sphinx.ext.napoleon'
 ]
-
-# Napoleon settings
-napoleon_google_docstring = True
-napoleon_numpy_docstring = True
-napoleon_include_init_with_doc = False
-napoleon_include_private_with_doc = False
-napoleon_include_special_with_doc = False
-napoleon_use_admonition_for_examples = False
-napoleon_use_admonition_for_notes = False
-napoleon_use_admonition_for_references = False
-napoleon_use_ivar = False
-napoleon_use_param = True
-napoleon_use_rtype = True
-napoleon_use_keyword = True
-napoleon_custom_sections = None
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
+# List of patterns, relative to src directory, that match files and
+# directories to ignore when looking for src files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 

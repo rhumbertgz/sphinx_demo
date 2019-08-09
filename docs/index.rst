@@ -11,7 +11,6 @@ Welcome to sphinx_demo's documentation!
    :caption: Contents:
 
 
-
 Indices and tables
 ==================
 
